@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         binding.button.setOnClickListener{
             startActivity(Intent(this,Massage::class.java).apply
             { putExtra(extra_massage,binding.editTextText.text.toString()) })
+
+
+
+
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
